@@ -1,9 +1,9 @@
-# sizeus-contract
+# ext-sizeus
 
 The **frozen cross-repo contract surface** for the [sizeus](https://github.com/sneat-co/sizeus)
 extension, per the Sneat [repository-naming standard](https://github.com/sneat-co/sneat-specs/blob/main/standards/repo-naming.md):
-every Sneat extension is two repos — `<id>` (implementation) and `<id>-contract`
-(the stable interface other repos import).
+every Sneat extension is two repos — `<id>` (implementation) and `ext-<id>`
+(the public extension-definition repo other repos import).
 
 This repo holds the shared DTOs, consts, and briefs that both surfaces of the
 sizeus extension depend on:

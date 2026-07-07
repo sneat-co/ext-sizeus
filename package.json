@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sneat-co/sizeus-contract.git"
+		"url": "https://github.com/sneat-co/ext-sizeus.git"
 	},
 	"type": "module",
 	"main": "./dist/index.js",
