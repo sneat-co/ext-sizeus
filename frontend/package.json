@@ -1,6 +1,6 @@
 {
 	"name": "@sneat/extension-sizeus-contract",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "Frozen cross-repo contract surface (shared DTOs, consts, briefs) for the sizeus Sneat extension",
 	"license": "MIT",
 	"repository": {
@@ -28,7 +28,13 @@
 		"typecheck": "tsc --noEmit",
 		"test": "vitest run"
 	},
+	"peerDependencies": {
+		"@sneat/data": "^0.22.0",
+		"@sneat/dto": "^0.22.0"
+	},
 	"devDependencies": {
+		"@sneat/data": "^0.22.0",
+		"@sneat/dto": "^0.22.0",
 		"typescript": "~5.9.3",
 		"vitest": "4.0.9"
 	}
