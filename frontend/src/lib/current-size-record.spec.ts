@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { currentSizeRecord } from './current-size-record';
-import { ISizeRecord } from './size-record';
+import { currentSizeRecord } from './current-size-record.js';
+import { ISizeRecord } from './size-record.js';
 
 function record(partial: Partial<ISizeRecord>): ISizeRecord {
 	return {

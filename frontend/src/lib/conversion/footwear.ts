@@ -1,4 +1,4 @@
-import { ISizeTypeConversionTable } from './types';
+import { ISizeTypeConversionTable } from './types.js';
 
 // Adult footwear — EU/UK/US. A widely used indicative reference chart (the
 // same rounded values many retailer size converters publish); it is NOT

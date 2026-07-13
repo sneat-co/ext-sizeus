@@ -1,4 +1,4 @@
-import { SizeSystem } from './size-system';
+import { SizeSystem } from './size-system.js';
 
 // One cell of a kit-sheet export: the current value for a size type, with
 // its declared system (per REQ kit-sheet-export the cell renders the value

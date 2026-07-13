@@ -1,5 +1,5 @@
-import { ISizeRecord } from './size-record';
-import { SizeSystem } from './size-system';
+import { ISizeRecord } from './size-record.js';
+import { SizeSystem } from './size-system.js';
 
 // Full append-first history for one (contact, size type) pair.
 //

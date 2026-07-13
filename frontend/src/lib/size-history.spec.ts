@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { ISizeHistory, ICurrentSize } from './size-history';
-import { ISizeRecord } from './size-record';
+import { ISizeHistory, ICurrentSize } from './size-history.js';
+import { ISizeRecord } from './size-record.js';
 
 describe('ISizeHistory round-trip', () => {
 	it('preserves the chronological records list through JSON serialize/parse', () => {

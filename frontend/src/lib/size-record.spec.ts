@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { ISizeRecord } from './size-record';
+import { ISizeRecord } from './size-record.js';
 
 describe('ISizeRecord round-trip', () => {
 	it('preserves every field, including optional ones, through JSON serialize/parse', () => {

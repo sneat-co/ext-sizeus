@@ -1,4 +1,4 @@
-import { SizeSystem } from '../size-system';
+import { SizeSystem } from '../size-system.js';
 
 // The shape a size type's recorded value takes. Per REQ catalog-extensibility
 // a new size type is declared purely by adding a data entry — `valueKind`

@@ -1,4 +1,4 @@
-import { IListInfo, ListType } from './list';
+import { IListInfo, ListType } from './list.js';
 
 export interface IListGroup {
   id: string;

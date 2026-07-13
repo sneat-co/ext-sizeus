@@ -1,8 +1,8 @@
 import { describe, it, expect } from 'vitest';
-import { MVP_SIZE_TYPE_CATALOG } from './mvp-catalog';
-import { ISizeTypeCatalog, ISizeTypeEntry } from './size-type';
-import { ISizeRecord } from '../size-record';
-import { currentSizeRecord } from '../current-size-record';
+import { MVP_SIZE_TYPE_CATALOG } from './mvp-catalog.js';
+import { ISizeTypeCatalog, ISizeTypeEntry } from './size-type.js';
+import { ISizeRecord } from '../size-record.js';
+import { currentSizeRecord } from '../current-size-record.js';
 
 function entryByID(catalog: ISizeTypeCatalog, id: string): ISizeTypeEntry | undefined {
 	return catalog.sizeTypes.find((entry) => entry.id === id);

@@ -1,4 +1,4 @@
-import { SizeSystem } from '../size-system';
+import { SizeSystem } from '../size-system.js';
 
 // One row of a conversion table: the same physical size expressed in every
 // system the table covers, keyed by system name (matching one of the values

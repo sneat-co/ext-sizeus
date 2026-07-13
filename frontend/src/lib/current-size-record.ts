@@ -1,4 +1,4 @@
-import { ISizeRecord } from './size-record';
+import { ISizeRecord } from './size-record.js';
 
 // Implements REQ size-history's "current" rule: the current size record is
 // the one with the latest non-future effective date; ties on the same

@@ -1,5 +1,5 @@
-import { ISizeTypeConversionTable } from './types';
-import { FOOTWEAR_ADULT_CONVERSION, FOOTWEAR_KIDS_CONVERSION } from './footwear';
+import { ISizeTypeConversionTable } from './types.js';
+import { FOOTWEAR_ADULT_CONVERSION, FOOTWEAR_KIDS_CONVERSION } from './footwear.js';
 
 // Every conversion table the contract ships, in the order they should be
 // presented. Consumers (e.g. the sizechart.app landing that generates one

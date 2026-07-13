@@ -1,2 +1,2 @@
-export * from './size-type';
-export * from './mvp-catalog';
+export * from './size-type.js';
+export * from './mvp-catalog.js';

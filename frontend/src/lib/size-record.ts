@@ -1,4 +1,4 @@
-import { SizeSystem } from './size-system';
+import { SizeSystem } from './size-system.js';
 
 // A single size record for one contactus contact within a Space.
 //

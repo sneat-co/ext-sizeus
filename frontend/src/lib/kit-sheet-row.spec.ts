@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { IKitSheetRow } from './kit-sheet-row';
+import { IKitSheetRow } from './kit-sheet-row.js';
 
 describe('IKitSheetRow round-trip', () => {
 	it('preserves contact fields and every cell, keyed by sizeTypeID, through JSON serialize/parse', () => {

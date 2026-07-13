@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { conversionHint } from './conversion-hint';
+import { conversionHint } from './conversion-hint.js';
 
 describe('conversionHint', () => {
 	it.each([

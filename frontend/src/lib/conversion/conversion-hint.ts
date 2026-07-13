@@ -1,6 +1,6 @@
-import { SizeSystem } from '../size-system';
-import { FOOTWEAR_ADULT_CONVERSION, FOOTWEAR_KIDS_CONVERSION } from './footwear';
-import { IConversionPairReliability, ISizeTypeConversionTable } from './types';
+import { SizeSystem } from '../size-system.js';
+import { FOOTWEAR_ADULT_CONVERSION, FOOTWEAR_KIDS_CONVERSION } from './footwear.js';
+import { IConversionPairReliability, ISizeTypeConversionTable } from './types.js';
 
 // Every conversion table shipped in this build. Adding a table for a new
 // size type (or a new system pair on an existing one) is pure data — append

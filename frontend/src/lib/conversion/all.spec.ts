@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { ALL_CONVERSION_TABLES, conversionTableFor } from './all';
-import { FOOTWEAR_ADULT_CONVERSION, FOOTWEAR_KIDS_CONVERSION } from './footwear';
+import { ALL_CONVERSION_TABLES, conversionTableFor } from './all.js';
+import { FOOTWEAR_ADULT_CONVERSION, FOOTWEAR_KIDS_CONVERSION } from './footwear.js';
 
 describe('ALL_CONVERSION_TABLES', () => {
 	it('ships the footwear tables in presentation order', () => {

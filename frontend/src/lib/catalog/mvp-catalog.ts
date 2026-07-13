@@ -1,4 +1,4 @@
-import { ISizeTypeCatalog } from './size-type';
+import { ISizeTypeCatalog } from './size-type.js';
 
 // The MVP size-type catalog (version 1). Pure data — per AC
 // catalog-extends-without-migration, adding a new size type here (e.g. "ski
