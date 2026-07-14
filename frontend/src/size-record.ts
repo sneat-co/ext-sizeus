@@ -31,9 +31,3 @@ export interface ISizeRecord {
 	readonly note?: string;
 	readonly preferredBrandNote?: string;
 }
-
-// A retrieved size record with its ID — mirrors facade4sizeus.SizeRecordItem.
-export interface ISizeRecordItem {
-	readonly id: string;
-	readonly record: ISizeRecord;
-}

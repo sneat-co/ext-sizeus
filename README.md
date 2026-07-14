@@ -11,20 +11,20 @@ sizeus extension depend on:
 - the extension libraries embedded in the Sneat super-app, and
 - the standalone app hosted at `sizechart.app`.
 
-Every shared DTO (size records, catalog models, …) must resolve from the
-`@sneat/extension-sizeus-contract` package — no duplicate DTO definitions are allowed in
-the `sizeus` implementation repo or in `sneat-apps`.
+Every shared DTO, service interface and Angular DI token must resolve from the
+`@sneat/extension-sizeus-contract` package. Duplicate contract definitions are not
+allowed in the `sizeus` implementation repo or in `sneat-apps`.
 
 ## Status
 
 The size-record DTO (`ISizeRecord`), history/current-value shapes
 (`ISizeHistory`, `ICurrentSize`), the kit-sheet export row (`IKitSheetRow`),
-and the `currentSizeRecord` helper are exported from `frontend/src/index.ts`. See
-`frontend/src/lib/` for the individual modules and their `*.spec.ts` round-trip and
-unit tests.
+and the `currentSizeRecord` helper are exported from `frontend/src/index.ts`.
+`SIZEUS_SERVICE` and `SIZEUS_API_SERVICE` define the runtime implementation ports
+used by the implementation repository.
 
 The versioned MVP size-type catalog (`ISizeTypeCatalog`, `MVP_SIZE_TYPE_CATALOG`
-in `frontend/src/lib/catalog/`) covers footwear, body measurements, tops, bottoms,
+in `frontend/src/catalog/`) covers footwear, body measurements, tops, bottoms,
 accessories, and the football/basketball/cycling/swimming sport kits. Adding a
 new size type is pure data — see the "extension is pure data" tests in
 `frontend/src/lib/catalog/mvp-catalog.spec.ts`. Indicative (never authoritative)

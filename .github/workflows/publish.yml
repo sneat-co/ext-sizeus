@@ -1,6 +1,8 @@
 name: Publish contract
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       ref:
@@ -8,11 +10,16 @@ on:
         required: false
         default: ""
 
+permissions:
+  contents: write
+
 jobs:
   publish:
     uses: sneat-co/cicd/.github/workflows/npm-publish.yml@main
     with:
       working-directory: frontend
       ref: ${{ inputs.ref }}
-      publish-command: pnpm publish --no-git-checks --access public
+      install-command: pnpm install --no-frozen-lockfile --ignore-scripts
+      build-command: pnpm exec nx build ext-sizeus-contract
+      publish-command: pnpm exec nx release --yes
     secrets: inherit

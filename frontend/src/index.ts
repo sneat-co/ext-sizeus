@@ -1,8 +1,11 @@
-// @sneat/extension-sizeus-contract — frozen cross-repo contract surface for the sizeus extension.
-//
-// Shared DTOs (size records, history/current-value shapes, kit-sheet export
-// rows, …) are exported from here so that both the Sneat super-app extension
-// libs and the standalone sizechart.app resolve every shared model from this
-// single package. No consumer may re-declare these.
-
-export * from './lib/index.js';
+export * from './constants.js';
+export * from './contexts/index.js';
+export * from './dto/index.js';
+export * from './services/index.js';
+export * from './size-system.js';
+export * from './size-record.js';
+export * from './size-history.js';
+export * from './kit-sheet-row.js';
+export * from './current-size-record.js';
+export * from './catalog/index.js';
+export * from './conversion/index.js';
