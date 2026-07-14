@@ -1,6 +1,6 @@
 {
 	"name": "@sneat/extension-sizeus-contract",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Frozen cross-repo contract surface (shared DTOs, consts, briefs) for the sizeus Sneat extension",
 	"license": "MIT",
 	"repository": {
