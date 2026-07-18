@@ -37,14 +37,14 @@
 		"rxjs": "^7.0.0"
 	},
 	"devDependencies": {
-		"@nx/js": "22.7.5",
+		"@nx/js": "22.7.7",
 		"@angular/core": "21.2.9",
 		"@sneat/core": "0.22.1",
 		"@sneat/data": "^0.22.0",
 		"@sneat/dto": "^0.22.0",
 		"@sneat/space-models": "0.22.1",
 		"rxjs": "7.8.2",
-		"nx": "22.7.5",
+		"nx": "22.7.7",
 		"typescript": "~5.9.3",
 		"vitest": "4.0.9"
 	}
