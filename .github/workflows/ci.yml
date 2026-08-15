@@ -19,6 +19,10 @@ jobs:
       - uses: sneat-co/cicd/actions/setup-pnpm-node@main
         with:
           working-directory: .
+          install: false
+
+      - name: Install frozen dependencies without lifecycle scripts
+        run: pnpm install --frozen-lockfile --ignore-scripts
 
       - name: Verify peer dependencies
         run: pnpm peers check
