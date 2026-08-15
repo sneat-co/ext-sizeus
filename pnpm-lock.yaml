@@ -8,6 +8,9 @@ importers:
 
   frontend:
     devDependencies:
+      '@angular/common':
+        specifier: 21.2.19
+        version: 21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2)
       '@angular/core':
         specifier: 21.2.19
         version: 21.2.19(rxjs@7.8.2)
@@ -16,16 +19,19 @@ importers:
         version: 22.7.5(@babel/traverse@7.29.7(supports-color@7.2.0))(debug@4.4.3(supports-color@7.2.0))(nx@22.7.7(debug@4.4.3(supports-color@7.2.0)))(supports-color@7.2.0)
       '@sneat/core':
         specifier: 0.22.1
-        version: 0.22.1(@angular/common@22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))
+        version: 0.22.1(@angular/common@21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))
       '@sneat/data':
         specifier: ^0.22.0
-        version: 0.22.1(@angular/common@22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))
+        version: 0.22.1(@angular/common@21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))
       '@sneat/dto':
         specifier: ^0.22.0
-        version: 0.22.1(@angular/common@22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))
+        version: 0.22.1(@angular/common@21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))
       '@sneat/space-models':
         specifier: 0.22.1
-        version: 0.22.1(@angular/common@22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))
+        version: 0.22.1(@angular/common@21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))
+      '@vitest/coverage-v8':
+        specifier: 4.1.0
+        version: 4.1.0(vitest@4.1.0(vite@7.3.6(yaml@2.9.0)))
       nx:
         specifier: 22.7.7
         version: 22.7.7(debug@4.4.3(supports-color@7.2.0))
@@ -41,11 +47,11 @@ importers:
 
 packages:
 
-  '@angular/common@22.0.6':
-    resolution: {integrity: sha512-+sC0W0FWGeZ/HKUhueCBX8kXdFQDlStbUSK6WF/32igfNYR/PdUrp2L5bU7q654yjxnMzFWDAB+Uvzv6YI/cQg==}
-    engines: {node: ^22.22.3 || ^24.15.0 || >=26.0.0}
+  '@angular/common@21.2.19':
+    resolution: {integrity: sha512-Rvo/VXI0kUmfQT7+OeAjv526OJlf/WrLnJq1Tz84Jkyv9bs9SOMTCT6m4+boo8gxVNdrcxvGU3Q0o2jZzKceSg==}
+    engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
     peerDependencies:
-      '@angular/core': 22.0.6
+      '@angular/core': 21.2.19
       rxjs: ^6.5.3 || ^7.4.0
 
   '@angular/core@21.2.19':
@@ -604,6 +610,10 @@ packages:
     resolution: {integrity: sha512-4zBIxpPzowiZpusoFkyGVwakdRJUyuH5PxQ/PrqghfdFWWasvnCdPfQXHrenDai+gyLARulZjZowCOj6fjT4pA==}
     engines: {node: '>=6.9.0'}
 
+  '@bcoe/v8-coverage@1.0.2':
+    resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
+    engines: {node: '>=18'}
+
   '@emnapi/core@1.4.5':
     resolution: {integrity: sha512-XsLw1dEOpkSX/WucdqUhPWP7hDxSvZiY+fsUC14h+FtQ2Ifni4znbBt8punRX+Uj2JG/uDb8nEHVKvrVlvdZ5Q==}
 
@@ -1096,6 +1106,15 @@ packages:
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
 
+  '@vitest/coverage-v8@4.1.0':
+    resolution: {integrity: sha512-nDWulKeik2bL2Va/Wl4x7DLuTKAXa906iRFooIRPR+huHkcvp9QDkPQ2RJdmjOFrqOqvNfoSQLF68deE3xC3CQ==}
+    peerDependencies:
+      '@vitest/browser': 4.1.0
+      vitest: 4.1.0
+    peerDependenciesMeta:
+      '@vitest/browser':
+        optional: true
+
   '@vitest/expect@4.1.0':
     resolution: {integrity: sha512-EIxG7k4wlWweuCLG9Y5InKFwpMEOyrMb6ZJ1ihYu02LVj/bzUwn2VMU+13PinsjRW75XnITeFrQBMH5+dLvCDA==}
 
@@ -1154,6 +1173,9 @@ packages:
   assertion-error@2.0.1:
     resolution: {integrity: sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==}
     engines: {node: '>=12'}
+
+  ast-v8-to-istanbul@1.0.5:
+    resolution: {integrity: sha512-UPAgKJFSEGMWSDr3LX4tqnAb4f7KGT8O40Tyx8wbYmmZ/yn58lNCm8h3svs3eXgiGd5AXxz8NDOvXWvicq+rJA==}
 
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
@@ -1475,6 +1497,9 @@ packages:
     resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
     engines: {node: '>= 0.4'}
 
+  html-escaper@2.0.2:
+    resolution: {integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==}
+
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
 
@@ -1521,6 +1546,21 @@ packages:
     resolution: {integrity: sha512-fKzAra0rGJUUBwGBgNkHZuToZcn+TtXHpeCgmkMJMMYx1sQDYaCSyjJBSCa2nH1DGm7s3n1oBnohoVTBaN7Lww==}
     engines: {node: '>=8'}
 
+  istanbul-lib-coverage@3.2.2:
+    resolution: {integrity: sha512-O8dpsF+r0WV/8MNRKfnmrtCWhuKjxrq2w+jpzBL5UZKTi2LeVWnWOmWRxFlesJONmc+wLAGvKQZEOanko0LFTg==}
+    engines: {node: '>=8'}
+
+  istanbul-lib-report@3.0.1:
+    resolution: {integrity: sha512-GCfE1mtsHGOELCU8e/Z7YWzpmybrx/+dSTfLrvY8qRmaY6zXTKWn6WQIjaAFw069icm6GVMNkgu0NzI4iPZUNw==}
+    engines: {node: '>=10'}
+
+  istanbul-reports@3.2.0:
+    resolution: {integrity: sha512-HGYWWS/ehqTV3xN10i23tkPkpH46MLCIMFNCaaKNavAXTF1RkqxawEPtnjnGZ6XKSInBKkiOA5BKS+aZiY3AvA==}
+    engines: {node: '>=8'}
+
+  js-tokens@10.0.0:
+    resolution: {integrity: sha512-lM/UBzQmfJRo9ABXbPWemivdCW8V2G8FHaHdypQaIy523snUjog0W71ayWXTjiR+ixeMyVHN2XcpnTd/liPg/Q==}
+
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -1559,6 +1599,13 @@ packages:
 
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
+
+  magicast@0.5.4:
+    resolution: {integrity: sha512-llBEhWm1SacoRwgHUoQJYtwp4PBLF4faQi5TCpIGyGs9n4y5+juI0tDgyKIfpqxckRHaHzouUEph3THklWh03w==}
+
+  make-dir@4.0.0:
+    resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
+    engines: {node: '>=10'}
 
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
@@ -1981,7 +2028,7 @@ packages:
 
 snapshots:
 
-  '@angular/common@22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2)':
+  '@angular/common@21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2)':
     dependencies:
       '@angular/core': 21.2.19(rxjs@7.8.2)
       rxjs: 7.8.2
@@ -2713,6 +2760,8 @@ snapshots:
       '@babel/helper-string-parser': 7.29.7
       '@babel/helper-validator-identifier': 7.29.7
 
+  '@bcoe/v8-coverage@1.0.2': {}
+
   '@emnapi/core@1.4.5':
     dependencies:
       '@emnapi/wasi-threads': 1.0.4
@@ -3040,27 +3089,27 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.62.2':
     optional: true
 
-  '@sneat/core@0.22.1(@angular/common@22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))':
+  '@sneat/core@0.22.1(@angular/common@21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))':
     dependencies:
-      '@angular/common': 22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/common': 21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2)
       '@angular/core': 21.2.19(rxjs@7.8.2)
       tslib: 2.8.1
 
-  '@sneat/data@0.22.1(@angular/common@22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))':
+  '@sneat/data@0.22.1(@angular/common@21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))':
     dependencies:
-      '@angular/common': 22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/common': 21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2)
       '@angular/core': 21.2.19(rxjs@7.8.2)
       tslib: 2.8.1
 
-  '@sneat/dto@0.22.1(@angular/common@22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))':
+  '@sneat/dto@0.22.1(@angular/common@21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))':
     dependencies:
-      '@angular/common': 22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/common': 21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2)
       '@angular/core': 21.2.19(rxjs@7.8.2)
       tslib: 2.8.1
 
-  '@sneat/space-models@0.22.1(@angular/common@22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))':
+  '@sneat/space-models@0.22.1(@angular/common@21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.19(rxjs@7.8.2))':
     dependencies:
-      '@angular/common': 22.0.6(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/common': 21.2.19(@angular/core@21.2.19(rxjs@7.8.2))(rxjs@7.8.2)
       '@angular/core': 21.2.19(rxjs@7.8.2)
       tslib: 2.8.1
 
@@ -3080,6 +3129,20 @@ snapshots:
   '@types/estree@1.0.9': {}
 
   '@types/parse-json@4.0.2': {}
+
+  '@vitest/coverage-v8@4.1.0(vitest@4.1.0(vite@7.3.6(yaml@2.9.0)))':
+    dependencies:
+      '@bcoe/v8-coverage': 1.0.2
+      '@vitest/utils': 4.1.0
+      ast-v8-to-istanbul: 1.0.5
+      istanbul-lib-coverage: 3.2.2
+      istanbul-lib-report: 3.0.1
+      istanbul-reports: 3.2.0
+      magicast: 0.5.4
+      obug: 2.1.4
+      std-env: 4.2.0
+      tinyrainbow: 3.1.0
+      vitest: 4.1.0(vite@7.3.6(yaml@2.9.0))
 
   '@vitest/expect@4.1.0':
     dependencies:
@@ -3141,6 +3204,12 @@ snapshots:
   argparse@2.0.1: {}
 
   assertion-error@2.0.1: {}
+
+  ast-v8-to-istanbul@1.0.5:
+    dependencies:
+      '@jridgewell/trace-mapping': 0.3.31
+      estree-walker: 3.0.3
+      js-tokens: 10.0.0
 
   asynckit@0.4.0: {}
 
@@ -3479,6 +3548,8 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
+  html-escaper@2.0.2: {}
+
   ieee754@1.2.1: {}
 
   ignore@7.0.5: {}
@@ -3510,6 +3581,21 @@ snapshots:
     dependencies:
       is-docker: 2.2.1
 
+  istanbul-lib-coverage@3.2.2: {}
+
+  istanbul-lib-report@3.0.1:
+    dependencies:
+      istanbul-lib-coverage: 3.2.2
+      make-dir: 4.0.0
+      supports-color: 7.2.0
+
+  istanbul-reports@3.2.0:
+    dependencies:
+      html-escaper: 2.0.2
+      istanbul-lib-report: 3.0.1
+
+  js-tokens@10.0.0: {}
+
   js-tokens@4.0.0: {}
 
   jsesc@3.1.0: {}
@@ -3538,6 +3624,16 @@ snapshots:
   magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  magicast@0.5.4:
+    dependencies:
+      '@babel/parser': 7.29.7
+      '@babel/types': 7.29.7
+      source-map-js: 1.2.1
+
+  make-dir@4.0.0:
+    dependencies:
+      semver: 7.8.5
 
   math-intrinsics@1.1.0: {}
 

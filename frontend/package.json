@@ -26,7 +26,8 @@
 		"build": "rm -rf dist && tsc -p tsconfig.build.json",
 		"prepublishOnly": "pnpm build",
 		"typecheck": "tsc --noEmit",
-		"test": "vitest run"
+		"test": "vitest run",
+		"test:coverage": "vitest run --coverage"
 	},
 	"peerDependencies": {
 		"@angular/core": "^21.0.0",
@@ -37,14 +38,16 @@
 		"rxjs": "^7.0.0"
 	},
 	"devDependencies": {
-		"@nx/js": "22.7.5",
+		"@angular/common": "21.2.19",
 		"@angular/core": "21.2.19",
+		"@nx/js": "22.7.5",
 		"@sneat/core": "0.22.1",
 		"@sneat/data": "^0.22.0",
 		"@sneat/dto": "^0.22.0",
 		"@sneat/space-models": "0.22.1",
-		"rxjs": "7.8.2",
+		"@vitest/coverage-v8": "4.1.0",
 		"nx": "22.7.7",
+		"rxjs": "7.8.2",
 		"typescript": "~5.9.3",
 		"vitest": "4.1.0"
 	}
